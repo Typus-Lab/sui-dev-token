@@ -25,7 +25,7 @@ Each Shared objects is the `Registry` of token.
 * USDC: 0x3bff7c8c97cd5c732fd3c7f4b7de6ef6be609762
 * USDT: 0x88a8537e23bfbf9686dddd2ca29bdd55563e65f1
 
-<font color=#FF0000> export PACKAGE=0x8f17d4911575dbc503810c6519a6e58eb7a52f56</font>
+`export PACKAGE=0x8f17d4911575dbc503810c6519a6e58eb7a52f56`
 
 `sui client call --gas-budget 10000 --package $PACKAGE --module "token_btc" --function "mint" --args 0x8d0807c8853df03c8ef5c86ac0a64aa55f41bf83 1000`
 
