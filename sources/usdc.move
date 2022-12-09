@@ -24,7 +24,7 @@ module sui_dev_token::usdc {
             b"USDC",
             b"Typus USDC",
             b"fake USDC on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"ipfs://bafkreifkkob3ne2kyd4qfxe5azxyyowaumi6y34ebyo6nvybmqg2znyhby")),
+            option::none(),
             ctx
         );
 
