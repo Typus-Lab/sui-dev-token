@@ -1,4 +1,4 @@
-module sui_dev_token::btc {
+module sui_dev_token::eth {
     use sui::tx_context::{Self, TxContext};
     use sui::transfer;
     use sui::object::{Self, UID};
@@ -11,20 +11,20 @@ module sui_dev_token::btc {
 
     struct Registry has key{
         id: UID,
-        treasury_cap: TreasuryCap<BTC>
+        treasury_cap: TreasuryCap<ETH>
     }
 
-    struct BTC has drop {}
+    struct ETH has drop {}
 
-    fun init(witness: BTC, ctx: &mut TxContext){
+    fun init(witness: ETH, ctx: &mut TxContext){
 
         let (treasury_cap, coin_metadata) = coin::create_currency( 
             witness,
-            8,
-            b"BTC",
-            b"Typus Bitcoin",
-            b"fake Bitcoin on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"ipfs://bafkreifkkob3ne2kyd4qfxe5azxyyowaumi6y34ebyo6nvybmqg2znyhby")),
+            18,
+            b"ETH",
+            b"Typus Ethereum",
+            b"fake Ethereum on Sui devnet for testing only maintained by Typus Lab",
+            option::some(url::new_unsafe_from_bytes(b"ipfs://bafkreienfqhhzcggefucfib3vgaibjvro7dwpvdbuacdcuy2wf2jlvavey/")),
             ctx
         );
 
