@@ -7,7 +7,7 @@ Fake Token on Sui Devnet for Testing Only
 Run
 `sui client publish  --gas-budget 10000`
 
-### Result:
+### Result
 
 ```
 Created Objects:
@@ -22,12 +22,12 @@ Created Objects:
 
 `export PACKAGE=0x39620ee07978d9b9bbd553c8534069332593d7f9`
 
-### CoinMetadata:
+### CoinMetadata
 * BTC: 0x6401c354ca825c2b9c2cba88f6bc47680e61339e
 * ETH: 0x12b021f01df75690a0c85c5b99085a9effc16f68
 
 
-### Registry:
+### Registry
 * BTC: 0x8adea878fc0092932eeef6cfa89a77b8d0892cf7
 * ETH: 0x7ad31a0d220451597d2dc87dc6e1d23ea6d81280
 <!-- * SUI: 0x6c074326e54b1144d03a7ab5b181935a4f8f35f8
