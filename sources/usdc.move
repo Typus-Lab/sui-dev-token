@@ -3,7 +3,6 @@ module sui_dev_token::usdc {
     use sui::transfer;
     use sui::object::{Self, UID};
     use sui::coin::{Self, TreasuryCap};
-    use sui::url;
 
     use std::option;
 
@@ -16,14 +15,13 @@ module sui_dev_token::usdc {
 
     struct USDC has drop {}
 
-    fun init(witness: USDC, ctx: &mut TxContext){
-
+    fun init(witness: USDC, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency( 
             witness,
             8,
             b"USDC",
             b"Typus USDC",
-            b"fake USDC on Sui devnet for testing only maintained by Typus Lab",
+            b"Fake USDC on Sui devnet for testing only maintained by Typus Lab",
             option::none(),
             ctx
         );
@@ -37,7 +35,7 @@ module sui_dev_token::usdc {
         transfer::share_object(registry);
     }
 
-    public entry fun mint(registry: &mut Registry, value: u64, ctx: &mut TxContext){
+    public entry fun mint(registry: &mut Registry, value: u64, ctx: &mut TxContext) {
 
         coin::mint_and_transfer(&mut registry.treasury_cap, value, tx_context::sender(ctx), ctx);
     }

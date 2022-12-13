@@ -16,14 +16,13 @@ module sui_dev_token::eth {
 
     struct ETH has drop {}
 
-    fun init(witness: ETH, ctx: &mut TxContext){
-
+    fun init(witness: ETH, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency( 
             witness,
             18,
             b"ETH",
             b"Typus Ethereum",
-            b"fake Ethereum on Sui devnet for testing only maintained by Typus Lab",
+            b"Fake Ethereum on Sui devnet for testing only maintained by Typus Lab",
             option::some(url::new_unsafe_from_bytes(b"ipfs://bafkreienfqhhzcggefucfib3vgaibjvro7dwpvdbuacdcuy2wf2jlvavey/")),
             ctx
         );
@@ -37,7 +36,7 @@ module sui_dev_token::eth {
         transfer::share_object(registry);
     }
 
-    public entry fun mint(registry: &mut Registry, value: u64, ctx: &mut TxContext){
+    public entry fun mint(registry: &mut Registry, value: u64, ctx: &mut TxContext) {
 
         coin::mint_and_transfer(&mut registry.treasury_cap, value, tx_context::sender(ctx), ctx);
     }
