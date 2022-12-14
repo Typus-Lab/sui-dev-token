@@ -11,31 +11,33 @@ Run
 
 ```
 Created Objects:
-  - ID: 0x12b021f01df75690a0c85c5b99085a9effc16f68 , Owner: Immutable
-  - ID: 0x39620ee07978d9b9bbd553c8534069332593d7f9 , Owner: Immutable
-  - ID: 0x6401c354ca825c2b9c2cba88f6bc47680e61339e , Owner: Immutable
-  - ID: 0x7ad31a0d220451597d2dc87dc6e1d23ea6d81280 , Owner: Shared
-  - ID: 0x8adea878fc0092932eeef6cfa89a77b8d0892cf7 , Owner: Shared
+  - ID: 0x19c9e6665005b957caba28966029c44ea1755e59 , Owner: Immutable
+  - ID: 0x1aa32408c79a44d12a6bc97c0f42c7cc7a3214b4 , Owner: Shared
+  - ID: 0x2ed816a1f36adb7f9d5639e16bac81be7720ebb1 , Owner: Immutable
+  - ID: 0x361be0a6f501063cb84ec946d647fe1a8042a89d , Owner: Immutable
+  - ID: 0x90ce1df83f63be7e034d5f6faadd5e7a0923960d , Owner: Immutable
+  - ID: 0xa61903455e77007e4359c3fabe5eb7669837d3e1 , Owner: Shared
+  - ID: 0xe1801aaa0d78bb1104f9f1e7fa8827126c78c5de , Owner: Shared
 ```
 
 ## Usage
 
-`export PACKAGE=0x0a7a15d173690ac676b03eb8285a615a8982cb27`
+`export PACKAGE=0x361be0a6f501063cb84ec946d647fe1a8042a89d`
 
 ### CoinMetadata
-* BTC: 0x25c417ee04e789911fdd4b6edabbeb4320fe7eea
-* ETH: 0x6afcada4464d98c5530afe68f513a58b6a31ed88
-* USDC: 0xa51624413b9e323f7daaa407624453f13791732c
+* BTC: 0x19c9e6665005b957caba28966029c44ea1755e59
+* ETH: 0x2ed816a1f36adb7f9d5639e16bac81be7720ebb1
+* SUI: 0x90ce1df83f63be7e034d5f6faadd5e7a0923960d
 
 
 ### Registry
-* BTC: 0x7fe9f4e9c4cb004a19cd5b5b2cc71509f94780aa
-* ETH: 0xa1e5ae3365f54f2f0addba26d1843a99a3d04eab
-* USDC: 0xcd64daa636a19c8ba55422167a22b20ff7fbbfde
+* BTC: 0x1aa32408c79a44d12a6bc97c0f42c7cc7a3214b4
+* ETH: 0xe1801aaa0d78bb1104f9f1e7fa8827126c78c5de
+* SUI: 0xa61903455e77007e4359c3fabe5eb7669837d3e1
 
 
 ### Mint
 
-`sui client call --gas-budget 10000 --package $PACKAGE --module "btc" --function "mint" --args 0x8adea878fc0092932eeef6cfa89a77b8d0892cf7 1000`
+`sui client call --gas-budget 10000 --package $PACKAGE --module "eth" --function "mint" --args 0xe1801aaa0d78bb1104f9f1e7fa8827126c78c5de 1000000000`
 
-`sui client call --gas-budget 10000 --package $PACKAGE --module "eth" --function "mint" --args 0x7ad31a0d220451597d2dc87dc6e1d23ea6d81280 1000`
+`sui client call --gas-budget 10000 --package $PACKAGE --module "sui" --function "mint" --args 0xa61903455e77007e4359c3fabe5eb7669837d3e1 1000000000`

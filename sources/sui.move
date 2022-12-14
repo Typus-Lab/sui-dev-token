@@ -1,4 +1,4 @@
-module sui_dev_token::usdc {
+module sui_dev_token::sui {
     use sui::tx_context::{Self, TxContext};
     use sui::transfer;
     use sui::object::{Self, UID};
@@ -10,18 +10,18 @@ module sui_dev_token::usdc {
 
     struct Registry has key{
         id: UID,
-        treasury_cap: TreasuryCap<USDC>
+        treasury_cap: TreasuryCap<SUI>
     }
 
-    struct USDC has drop {}
+    struct SUI has drop {}
 
-    fun init(witness: USDC, ctx: &mut TxContext) {
+    fun init(witness: SUI, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency( 
             witness,
-            8,
-            b"USDC",
-            b"Typus USDC",
-            b"Fake USDC on Sui devnet for testing only maintained by Typus Lab",
+            9,
+            b"SUI",
+            b"Typus Sui",
+            b"Fake Sui on Sui devnet for testing only maintained by Typus Lab",
             option::none(),
             ctx
         );
