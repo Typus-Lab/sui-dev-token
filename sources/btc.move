@@ -19,7 +19,7 @@ module sui_dev_token::btc {
     fun init(witness: BTC, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency( 
             witness,
-            8,
+            9,
             b"BTC",
             b"Typus Bitcoin",
             b"Fake Bitcoin on Sui devnet for testing only maintained by Typus Lab",

@@ -19,7 +19,7 @@ module sui_dev_token::eth {
     fun init(witness: ETH, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency( 
             witness,
-            18,
+            9,
             b"ETH",
             b"Typus Ethereum",
             b"Fake Ethereum on Sui devnet for testing only maintained by Typus Lab",
