@@ -37,14 +37,20 @@ Created Objects:
 * SUI: 0x2b4ce2ba3a4389362fd8735e9b2aa3bdbfee254d
 
 
-### 
-`export TOKEN_PACKAGE=0xcd396739e72ccd373eca7e575d50ba1438bd8022`
-`export BTC=0x1dc9badec3668714180be572a12f21221774f01c`
-`export ETH=0x427b4a2b39e96fd4b3053dd5ecee973daf405cbe`
-`export SUI=0x2b4ce2ba3a4389362fd8735e9b2aa3bdbfee254d`
+## Mint
 
-### Mint
+```
+export TOKEN_PACKAGE=0xcd396739e72ccd373eca7e575d50ba1438bd8022
+export BTC=0x1dc9badec3668714180be572a12f21221774f01c
+export ETH=0x427b4a2b39e96fd4b3053dd5ecee973daf405cbe
+export SUI=0x2b4ce2ba3a4389362fd8735e9b2aa3bdbfee254d
+```
 
+### Mint BTC
+`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "btc" --function "mint" --args $BTC 1000000000`
+
+### Mint ETH
 `sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "eth" --function "mint" --args $ETH 1000000000`
 
+### Mint SUI
 `sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "sui" --function "mint" --args $SUI 1000000000`
