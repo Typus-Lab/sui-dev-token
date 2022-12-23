@@ -11,39 +11,39 @@ Run
 
 ```
 Created Objects:
-  - ID: 0x15d919a96e4b91680276a4f6674a638de3181f9b , Owner: Immutable
-  - ID: 0x1b44294ff9b2d481d027d354ac721eac65fac613 , Owner: Immutable
-  - ID: 0x1dc9badec3668714180be572a12f21221774f01c , Owner: Shared
-  - ID: 0x2b4ce2ba3a4389362fd8735e9b2aa3bdbfee254d , Owner: Shared
-  - ID: 0x2f723c9c9e8a2bb6d0654a6fc30116d83960a614 , Owner: Immutable
-  - ID: 0x427b4a2b39e96fd4b3053dd5ecee973daf405cbe , Owner: Shared
-  - ID: 0xcd396739e72ccd373eca7e575d50ba1438bd8022 , Owner: Immutable
+  - ID: 0x2009591841eff19d6c5e97eae7a45f2f3908e502 , Owner: Immutable
+  - ID: 0x569832dd430ea3d31853b2e93e545bde89526021 , Owner: Shared
+  - ID: 0x86d252653e78b9f7c7b5382f93f5c74852544e1c , Owner: Shared
+  - ID: 0x88aa89fa8f405223401e212548798965655ac189 , Owner: Immutable
+  - ID: 0xd5805a9e4037ef5ae51afbab2a4cd36090bb6c8a , Owner: Immutable
+  - ID: 0xd5c1f62d32f140a59c2ce2997a912b1bd43623a1 , Owner: Immutable
+  - ID: 0xde87ddc6cc6570ae8ff3bf9ab4cf07b2d5f7bba3 , Owner: Shared
 ```
 
 ## Usage
 
 ### Package
-0xcd396739e72ccd373eca7e575d50ba1438bd8022
+0x2009591841eff19d6c5e97eae7a45f2f3908e502
 
 ### CoinMetadata
-* BTC: 0x2f723c9c9e8a2bb6d0654a6fc30116d83960a614
-* ETH: 0x15d919a96e4b91680276a4f6674a638de3181f9b
-* SUI: 0x1b44294ff9b2d481d027d354ac721eac65fac613
+* BTC: 0xd5c1f62d32f140a59c2ce2997a912b1bd43623a1
+* ETH: 0x88aa89fa8f405223401e212548798965655ac189
+* SUI: 0xd5805a9e4037ef5ae51afbab2a4cd36090bb6c8a
 
 
 ### Registry
-* BTC: 0x1dc9badec3668714180be572a12f21221774f01c
-* ETH: 0x427b4a2b39e96fd4b3053dd5ecee973daf405cbe
-* SUI: 0x2b4ce2ba3a4389362fd8735e9b2aa3bdbfee254d
+* BTC: 0x86d252653e78b9f7c7b5382f93f5c74852544e1c
+* ETH: 0x569832dd430ea3d31853b2e93e545bde89526021
+* SUI: 0xde87ddc6cc6570ae8ff3bf9ab4cf07b2d5f7bba3
 
 
 ## Mint
 
 ```
-export TOKEN_PACKAGE=0xcd396739e72ccd373eca7e575d50ba1438bd8022
-export BTC=0x1dc9badec3668714180be572a12f21221774f01c
-export ETH=0x427b4a2b39e96fd4b3053dd5ecee973daf405cbe
-export SUI=0x2b4ce2ba3a4389362fd8735e9b2aa3bdbfee254d
+export TOKEN_PACKAGE=0x2009591841eff19d6c5e97eae7a45f2f3908e502
+export BTC=0x86d252653e78b9f7c7b5382f93f5c74852544e1c
+export ETH=0x569832dd430ea3d31853b2e93e545bde89526021
+export SUI=0xde87ddc6cc6570ae8ff3bf9ab4cf07b2d5f7bba3
 ```
 
 ### Mint BTC
