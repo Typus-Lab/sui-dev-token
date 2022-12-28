@@ -20,8 +20,6 @@ Created Objects:
   - ID: 0xde87ddc6cc6570ae8ff3bf9ab4cf07b2d5f7bba3 , Owner: Shared
 ```
 
-## Usage
-
 ### Package
 0x2009591841eff19d6c5e97eae7a45f2f3908e502
 
@@ -37,13 +35,14 @@ Created Objects:
 * SUI: 0xde87ddc6cc6570ae8ff3bf9ab4cf07b2d5f7bba3
 
 
-## Mint
+## Usage (Updated)
 
 ```
-export TOKEN_PACKAGE=0x2009591841eff19d6c5e97eae7a45f2f3908e502
-export BTC=0x86d252653e78b9f7c7b5382f93f5c74852544e1c
-export ETH=0x569832dd430ea3d31853b2e93e545bde89526021
-export SUI=0xde87ddc6cc6570ae8ff3bf9ab4cf07b2d5f7bba3
+export TOKEN_PACKAGE=0xc6e0ac81e9640d3afdc8a1b77c16e9aaecd4ed3c
+export BTC=0x57dc4685653ca1265aa36524ffe318ce86cd1827
+export ETH=0x4b234973f74d88933d2f4bedf4fb755fa9255dec
+export SUI=0x503791addd188e97484ffd28565bfaf75c6749cd
+export USDC=0x4d5c08a8d253c84d21e253dda525f651be04a8c2
 ```
 
 ### Mint BTC
@@ -54,3 +53,7 @@ export SUI=0xde87ddc6cc6570ae8ff3bf9ab4cf07b2d5f7bba3
 
 ### Mint SUI
 `sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "sui" --function "mint" --args $SUI 1000000000`
+
+### Mint USDC
+`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "usdc" --function "mint" --args $USDC 1000000000`
+
