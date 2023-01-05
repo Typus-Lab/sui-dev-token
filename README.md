@@ -38,21 +38,21 @@ Created Objects:
 ## Usage (Updated)
 
 ```
-export TOKEN_PACKAGE=0xc6e0ac81e9640d3afdc8a1b77c16e9aaecd4ed3c
-export BTC=0x57dc4685653ca1265aa36524ffe318ce86cd1827
-export ETH=0x4b234973f74d88933d2f4bedf4fb755fa9255dec
-export SUI=0x503791addd188e97484ffd28565bfaf75c6749cd
-export USDC=0x4d5c08a8d253c84d21e253dda525f651be04a8c2
+export TOKEN_PACKAGE=0x2c9a10117599e2d3232495a525b10f679691c9ae
+export BTC=0xe0dc19dfc9023f2e86462aa37dc8fae290b4e2bb
+export ETH=0x9ad1db50850079e98d5972e3d9a8fdc90b9d1f19
+export SUI=0xc6128d63d24cbdb66e50cef4577e5cf36bb889e1
+export USDC=0xdb54655d5f3bfb8ddf8affff3cb50bb31dd39c58
 ```
 
 ### Mint BTC
-`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "btc" --function "mint" --args $BTC 1000000000`
+`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "btc" --function "mint" --args $BTC "0x3B9ACA00"`
 
 ### Mint ETH
-`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "eth" --function "mint" --args $ETH 1000000000`
+`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "eth" --function "mint" --args $ETH "0x3B9ACA00"`
 
 ### Mint SUI
-`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "sui" --function "mint" --args $SUI 1000000000`
+`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "sui" --function "mint" --args $SUI "0x3B9ACA00"`
 
 ### Mint USDC
 `sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "usdc" --function "mint" --args $USDC 1000000000`
