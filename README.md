@@ -38,11 +38,13 @@ Created Objects:
 ## Usage (Updated)
 
 ```
-export TOKEN_PACKAGE=0x2c9a10117599e2d3232495a525b10f679691c9ae
-export BTC=0xe0dc19dfc9023f2e86462aa37dc8fae290b4e2bb
-export ETH=0x9ad1db50850079e98d5972e3d9a8fdc90b9d1f19
-export SUI=0xc6128d63d24cbdb66e50cef4577e5cf36bb889e1
-export USDC=0xdb54655d5f3bfb8ddf8affff3cb50bb31dd39c58
+export TOKEN_PACKAGE=0x1ed338b4e737d89729386b8170b0f45910ad30fa
+export BTC=0xf5f939a6a79927e55582985a8bf125d37b0ab297
+export ETH=0xb79efcacd84dc70dd6969686d7e7fadadc14c2d5
+export SUI=0xde095084d4485b0482ab8dc8fe8c8328902fa223
+export USDC=0x5bc4107b2a6b76fb2d20ff24ebb580b5bae1ac1d
+export APT=0xfc2d8d903583e27f95045d276a392afa08d5b5ba
+export DOGE=0x0520bb2e08d08155c0d62496c6f2e11bfb8c4051
 ```
 
 ### Mint BTC
@@ -53,7 +55,4 @@ export USDC=0xdb54655d5f3bfb8ddf8affff3cb50bb31dd39c58
 
 ### Mint SUI
 `sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "sui" --function "mint" --args $SUI "0x3B9ACA00"`
-
-### Mint USDC
-`sui client call --gas-budget 10000 --package $TOKEN_PACKAGE --module "usdc" --function "mint" --args $USDC 1000000000`
 
