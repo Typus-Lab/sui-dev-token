@@ -37,6 +37,18 @@ Created Objects:
 
 ## Usage (Updated)
 
+### Devnet (Updated)
+```
+export TOKEN_PACKAGE=0x232b50236cb72e062e5a028614ba5e0df666e0d5
+export BTC=0x33c2779135a1b8777e5f27719e042bb0dbb6399f
+export ETH=0xc53adf9731ab7f6633d85b461361f2347070fa1b
+export SUI=0xece242a120249621ba09cef7509fd3d6399699a8
+export USDC=0x181285489f732d928f06f2bb94c0a6aa7e590dcc
+export APT=0x4ce8e5ed112d58134d410669ed652753beb8a2c8
+export DOGE=0xb12b0730ddac94d2ac900283eee4a63c5c3fe55b
+```
+
+### Testnet (Updated)
 ```
 export TOKEN_PACKAGE=0xa1d0cdb1b41c786d53a03d30340ab05718010e04
 export BTC=0x7325b75b85ee45e78204a9dcf7800a397259eb3d
