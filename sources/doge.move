@@ -23,7 +23,7 @@ module sui_dev_token::doge {
             b"DOGE",
             b"Typus Dogecoin",
             b"Fake Dogecoin on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"ipfs://bafkreifkkob3ne2kyd4qfxe5azxyyowaumi6y34ebyo6nvybmqg2znyhby")),
+            option::some(url::new_unsafe_from_bytes(b"https://devnet.typus.finance/_next/static/media/doge_logo.a7e207ed.svg")),
             ctx
         );
 

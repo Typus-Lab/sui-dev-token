@@ -3,6 +3,7 @@ module sui_dev_token::sui {
     use sui::transfer;
     use sui::object::{Self, UID};
     use sui::coin::{Self, TreasuryCap};
+    use sui::url;
 
     use std::option;
 
@@ -22,7 +23,7 @@ module sui_dev_token::sui {
             b"SUI",
             b"Typus Sui",
             b"Fake Sui on Sui devnet for testing only maintained by Typus Lab",
-            option::none(),
+            option::some(url::new_unsafe_from_bytes(b"https://devnet.typus.finance/_next/static/media/sui_logo.3a6909e5.svg")),
             ctx
         );
 
