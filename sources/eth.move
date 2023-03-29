@@ -17,7 +17,7 @@ module sui_dev_token::eth {
     struct ETH has drop {}
 
     fun init(witness: ETH, ctx: &mut TxContext) {
-        let (treasury_cap, coin_metadata) = coin::create_currency( 
+        let (treasury_cap, coin_metadata) = coin::create_currency(
             witness,
             9,
             b"ETH",
@@ -32,7 +32,7 @@ module sui_dev_token::eth {
             treasury_cap
         };
 
-        transfer::freeze_object(coin_metadata);
+        transfer::public_freeze_object(coin_metadata);
         transfer::share_object(registry);
     }
 

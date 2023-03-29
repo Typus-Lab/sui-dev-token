@@ -17,7 +17,7 @@ module sui_dev_token::doge {
     struct DOGE has drop {}
 
     fun init(witness: DOGE, ctx: &mut TxContext) {
-        let (treasury_cap, coin_metadata) = coin::create_currency( 
+        let (treasury_cap, coin_metadata) = coin::create_currency(
             witness,
             9,
             b"DOGE",
@@ -32,7 +32,7 @@ module sui_dev_token::doge {
             treasury_cap
         };
 
-        transfer::freeze_object(coin_metadata);
+        transfer::public_freeze_object(coin_metadata);
         transfer::share_object(registry);
     }
 

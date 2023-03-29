@@ -17,7 +17,7 @@ module sui_dev_token::apt {
     struct APT has drop {}
 
     fun init(witness: APT, ctx: &mut TxContext) {
-        let (treasury_cap, coin_metadata) = coin::create_currency( 
+        let (treasury_cap, coin_metadata) = coin::create_currency(
             witness,
             9,
             b"APT",
@@ -32,7 +32,7 @@ module sui_dev_token::apt {
             treasury_cap
         };
 
-        transfer::freeze_object(coin_metadata);
+        transfer::public_freeze_object(coin_metadata);
         transfer::share_object(registry);
     }
 

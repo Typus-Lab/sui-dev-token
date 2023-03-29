@@ -17,7 +17,7 @@ module sui_dev_token::usdc {
     struct USDC has drop {}
 
     fun init(witness: USDC, ctx: &mut TxContext) {
-        let (treasury_cap, coin_metadata) = coin::create_currency( 
+        let (treasury_cap, coin_metadata) = coin::create_currency(
             witness,
             9,
             b"USDC",
@@ -32,7 +32,7 @@ module sui_dev_token::usdc {
             treasury_cap
         };
 
-        transfer::freeze_object(coin_metadata);
+        transfer::public_freeze_object(coin_metadata);
         transfer::share_object(registry);
     }
 
