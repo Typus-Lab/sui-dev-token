@@ -23,7 +23,7 @@ module sui_dev_token::apt {
             b"APT",
             b"Typus Aptos",
             b"Fake Aptos on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"https://devnet.typus.finance/_next/static/media/APT_gray_20x20.1b4fd525.svg")),
+            option::some(url::new_unsafe_from_bytes(b"https://github.com/Typus-Lab/typus-asset/blob/main/assets/APT.svg")),
             ctx
         );
 

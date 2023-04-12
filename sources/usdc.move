@@ -23,7 +23,7 @@ module sui_dev_token::usdc {
             b"USDC",
             b"Typus USDC",
             b"Fake USDC on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"https://devnet.typus.finance/_next/static/media/USDC_gray_20x20.a829028d.svg")),
+            option::some(url::new_unsafe_from_bytes(b"https://github.com/Typus-Lab/typus-asset/blob/main/assets/USDC.svg")),
             ctx
         );
 

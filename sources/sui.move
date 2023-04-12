@@ -23,7 +23,7 @@ module sui_dev_token::sui {
             b"SUI",
             b"Typus Sui",
             b"Fake Sui on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"https://devnet.typus.finance/_next/static/media/sui_logo.3a6909e5.svg")),
+            option::some(url::new_unsafe_from_bytes(b"https://github.com/Typus-Lab/typus-asset/blob/main/assets/SUI.svg")),
             ctx
         );
 
