@@ -23,7 +23,7 @@ module sui_dev_token::btc {
             b"BTC",
             b"Typus Bitcoin",
             b"Fake Bitcoin on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"https://github.com/Typus-Lab/typus-asset/blob/main/assets/BTC.svg")),
+            option::some(url::new_unsafe_from_bytes(b"https://raw.githubusercontent.com/Typus-Lab/typus-asset/main/assets/BTC.svg")),
             ctx
         );
 

@@ -23,7 +23,7 @@ module sui_dev_token::eth {
             b"ETH",
             b"Typus Ethereum",
             b"Fake Ethereum on Sui devnet for testing only maintained by Typus Lab",
-            option::some(url::new_unsafe_from_bytes(b"https://github.com/Typus-Lab/typus-asset/blob/main/assets/ETH.svg")),
+            option::some(url::new_unsafe_from_bytes(b"https://raw.githubusercontent.com/Typus-Lab/typus-asset/main/assets/ETH.svg")),
             ctx
         );
 
