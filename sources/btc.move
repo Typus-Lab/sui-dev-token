@@ -32,7 +32,7 @@ module sui_dev_token::btc {
             treasury_cap
         };
 
-        transfer::public_freeze_object(coin_metadata);
+        transfer::public_share_object(coin_metadata);
         transfer::share_object(registry);
     }
 
