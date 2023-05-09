@@ -19,7 +19,7 @@ module sui_dev_token::usdc {
     fun init(witness: USDC, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency(
             witness,
-            9,
+            6,
             b"USDC",
             b"Typus USDC",
             b"Fake USDC on Sui devnet for testing only maintained by Typus Lab",
