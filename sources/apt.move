@@ -19,7 +19,7 @@ module sui_dev_token::apt {
     fun init(witness: APT, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency(
             witness,
-            9,
+            8,
             b"APT",
             b"Typus Aptos",
             b"Fake Aptos on Sui testnet for testing only maintained by Typus Lab",
