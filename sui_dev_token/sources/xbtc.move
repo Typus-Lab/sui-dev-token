@@ -19,7 +19,7 @@ module sui_dev_token::xbtc {
     fun init(witness: XBTC, ctx: &mut TxContext) {
         let (treasury_cap, coin_metadata) = coin::create_currency(
             witness,
-            9,
+            8,
             b"XBTC",
             b"Typus XBTC",
             b"Fake XBTC on Sui testnet for testing only maintained by Typus Lab",
